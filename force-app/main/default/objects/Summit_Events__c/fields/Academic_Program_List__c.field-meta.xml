@@ -17,6 +17,11 @@
                 <default>false</default>
                 <label>All</label>
             </value>
+            <value>
+                <fullName>Mike Test</fullName>
+                <default>false</default>
+                <label>Mike Test</label>
+            </value>
         </valueSetDefinition>
     </valueSet>
     <visibleLines>5</visibleLines>
