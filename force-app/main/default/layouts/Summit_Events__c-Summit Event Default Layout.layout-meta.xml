@@ -686,13 +686,19 @@
         <fields>UPDATEDBY_USER</fields>
         <relatedList>Summit_Events_Email__c.Event__c</relatedList>
     </relatedLists>
+    <relatedLists>
+        <fields>NAME</fields>
+        <fields>Question_text__c</fields>
+        <fields>Question_Type__c</fields>
+        <relatedList>Summit_Events_Question__c.Event__c</relatedList>
+    </relatedLists>
     <showEmailCheckbox>false</showEmailCheckbox>
     <showHighlightsPanel>false</showHighlightsPanel>
     <showInteractionLogPanel>false</showInteractionLogPanel>
     <showRunAssignmentRulesCheckbox>false</showRunAssignmentRulesCheckbox>
     <showSubmitAndAttachButton>false</showSubmitAndAttachButton>
     <summaryLayout>
-        <masterLabel>00h0R000003YHq9</masterLabel>
+        <masterLabel>00h1D000003HEb0</masterLabel>
         <sizeX>4</sizeX>
         <sizeY>0</sizeY>
         <summaryLayoutStyle>Default</summaryLayoutStyle>
