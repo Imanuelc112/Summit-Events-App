@@ -9,6 +9,11 @@ ready(() => {
     const guestInputForm = document.getElementById("guestInput");
     guestInputForm.addEventListener('submit', handleGuestInput);
     loadUpPreviousData();
+
+    var divs = document.querySelectorAll('#guestInput input.required').forEach(function(el) {
+        el.setAttribute('required','required')
+    })
+    //guestInput
 });
 
 const guestListTemplate = (fullName, uniqueId, restOfData) => `
@@ -105,12 +110,12 @@ function loadUpPreviousData() {
             let restOfData = '';
             for (let key in allGuests[i]) {
                 if (key.toLowerCase() === 'first_name') {
-                    firstname = escape(allGuests[i][key]);
+                    firstname = unescape(allGuests[i][key]);
                 } else if (key.toLowerCase() === 'last_name') {
-                    lastname = escape(allGuests[i][key]);
+                    lastname = unescape(allGuests[i][key]);
                 } else if (key.toLowerCase() !== 'id') {
                     if (allGuests[i][key]) {
-                        restOfData += '<span class="slds-badge slds-badge_lightest">' + allGuests[i][key] + '</span>';
+                        restOfData += '<span class="slds-badge slds-badge_lightest">' + unescape(allGuests[i][key]) + '</span>';
                     }
                 }
             }

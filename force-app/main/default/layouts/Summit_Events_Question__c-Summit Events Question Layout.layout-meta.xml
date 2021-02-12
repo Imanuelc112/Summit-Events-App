@@ -28,7 +28,7 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>Question_text__c</field>
+                <field>Question_Text__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>

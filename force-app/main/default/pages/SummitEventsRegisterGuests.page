@@ -71,7 +71,7 @@
                                                 </label>
                                                 <div class="slds-form-element__control">
                                                     <apex:outputPanel layout="none" rendered="{!(IF(NOT(q == 'Country' || q == 'State'), true, false))}">
-                                                        <input type="{!If(q = 'Email','email','text')}" id="{!q}" name="{!q}" placeholder="{!SUBSTITUTE(q, "_", " ")}" required="{!IF(q = 'First_name' || q = 'Last_name', 'required', '')}" class="slds-input"/>
+                                                        <input type="{!If(q = 'Email','email','text')}" id="{!q}" name="{!q}" placeholder="{!SUBSTITUTE(q, "_", " ")}" class="slds-input {!IF(q = 'First_name' || q = 'Last_name', 'required', '')}"/>
                                                     </apex:outputPanel>
                                                     <apex:outputText escape="false" value="{!statePicklist}" rendered="{!(IF(q == 'State', true, false))}"/>
                                                     <apex:outputText escape="false" value="{!countryPicklist}" rendered="{!(IF(q == 'Country', true, false))}"/>
