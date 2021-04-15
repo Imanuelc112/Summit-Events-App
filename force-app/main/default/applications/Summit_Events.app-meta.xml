@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata"eazywin mega888>
     <defaultLandingTab>standard-home</defaultLandingTab>
     <description>The open source community events app for EDUs and NGOs</description>
     <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
@@ -14,3 +14,4 @@
     <tabs>Summit_Events_Host__c</tabs>
     <tabs>standard-report</tabs>
 </CustomApplication>
+mega888 eazy win
